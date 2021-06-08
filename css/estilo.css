@@ -1,0 +1,335 @@
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; overflow-x: hidden; }
+
+/* Tipografía Única: Quicksand */
+h1, h2, h3, h4, h5, h6, p, a, span, form, input, select, textarea, option, button, div { font-family: 'Antonio', sans-serif; }
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+
+
+
+/* Componente Botón WhatsApp flotante */
+aside#boton-wp { width: 45px; height: 45px; margin: 0; float: none; position: fixed; right: 15px; bottom: 15px; z-index: 99998; }
+aside#boton-wp a { width: 100%; height: auto; margin: 0; float: none; position: relative; display: block; background: #00bb2d; border-radius: 50%; text-align: center; padding: 10px 0; transition: all 0.3s ease-in; }
+aside#boton-wp a i { font-size: 1.5em; line-height: 1em; color: rgba(240, 233, 233, 0.616); transition: all 0.3s ease-in; }
+aside#boton-wp a:hover { background: #000; transition: all 0.3s ease-in; }
+aside#boton-wp a:hover i { color: #00bb2d; transition: all 0.3s ease-in; }
+
+
+
+
+/*header*/ 
+
+/* Componente Header con Logo y Menú */
+header { width: 100%; height: 100px; margin: 0; float: none; position: fixed; left: 0; top: 0; z-index: 99990; background: rgba(115, 194, 111, 0.507); }
+header article { width: 1100px; height: 80px; margin: 0 auto; float: none; position: relative; }
+
+header article figure { width: 152px; height: 60px; margin: 0; float: left; position: relative; top: 10px; }
+header article figure a { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+header article figure a img { width: auto; height: 80px; margin: 0 auto; float: none; position: relative; display: block; }
+
+header article nav { width: 400px; height: 40px; margin: 0; float: right; position: relative; top: 20px; }
+header article nav a { width: auto; height: auto; margin: 0 15px; float: left; position: relative; text-decoration: none; color: #f9fffa; font-weight: 700; font-size: 1em; line-height: 1em; text-align: center; padding: 12px 0; border-bottom: solid 2px rgb(254, 255, 254); transition: all 0.3s ease-in; }
+header article nav a:hover { color: #00ff22; border-bottom: solid 2px #04fa6a; transition: all 0.3s ease-in; }
+
+
+
+
+
+
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: #a5a5a5; }
+
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: block; text-decoration: none; color: rgb(255, 253, 253); background: #000000; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#abrir-menu:hover { background: #ffffff; transition: all 0.3s ease-in }
+
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: none; text-decoration: none; color: rgb(248, 252, 248); background: #000000; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu:hover { background: #fc0000; transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: rgb(255, 255, 255); font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-moviles nav a:hover { color: #1d1d1d; transition: all 0.3s ease-in; }
+
+
+
+
+
+
+
+
+
+
+
+/* slide slider*/
+
+main section#zona-slider {width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative; }
+main section#zona-slider article.slick-slider{ width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative;}
+main section#zona-slider article.slick-slider figure#slide_01 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/590478/pexels-photo-590478.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat top center; background-size: cover;  }
+main section#zona-slider article.slick-slider figure#slide_01 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide_01 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider article.slick-slider figure#slide-02 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/4179480/pexels-photo-4179480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;   }
+main section#zona-slider article.slick-slider figure#slide-02 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide-02 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 250, 250); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider article.slick-slider figure#slide-03 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/34424/mount-rushmore-monument-landmark-scenic.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;   }
+main section#zona-slider article.slick-slider figure#slide-03 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide-03 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(238, 238, 238); transition: all 0.3s ease-in; text-decoration: none;}
+
+.slick-prev { left: 25px !important ; z-index: 9 !important ;}
+.slick-next { right:25px  !important ;z-index: 9 !important ;}
+
+
+
+/* slide slider1*/
+
+main section#zona-slider1 {width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative; }
+main section#zona-slider1 article.slick-slider{ width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative;}
+main section#zona-slider1 article.slick-slider figure#slide_01 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/708764/pexels-photo-708764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;  }
+main section#zona-slider1 article.slick-slider figure#slide_01 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider1 article.slick-slider figure#slide_01 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider1 article.slick-slider figure#slide-02 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;   }
+main section#zona-slider1 article.slick-slider figure#slide-02 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider1 article.slick-slider figure#slide-02 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 250, 250); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider1 article.slick-slider figure#slide-03 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/373290/pexels-photo-373290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;   }
+main section#zona-slider1 article.slick-slider figure#slide-03 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider1 article.slick-slider figure#slide-03 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(238, 238, 238); transition: all 0.3s ease-in; text-decoration: none;}
+
+.slick-prev { left: 25px !important ; z-index: 9 !important ;}
+.slick-next { right:25px  !important ;z-index: 9 !important ;}
+
+
+/* slide slider2*/
+
+main section#zona-slider2 {width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative; }
+main section#zona-slider2 article.slick-slider{ width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative;}
+main section#zona-slider2 article.slick-slider figure#slide_01 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/1850619/pexels-photo-1850619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;  }
+main section#zona-slider2 article.slick-slider figure#slide_01 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider2 article.slick-slider figure#slide_01 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider2 article.slick-slider figure#slide-02 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/2748019/pexels-photo-2748019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;   }
+main section#zona-slider2 article.slick-slider figure#slide-02 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider2 article.slick-slider figure#slide-02 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 250, 250); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider2 article.slick-slider figure#slide-03 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/258117/pexels-photo-258117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;   }
+main section#zona-slider2 article.slick-slider figure#slide-03 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider2 article.slick-slider figure#slide-03 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(238, 238, 238); transition: all 0.3s ease-in; text-decoration: none;}
+
+.slick-prev { left: 25px !important ; z-index: 9 !important ;}
+.slick-next { right:25px  !important ;z-index: 9 !important ;}
+
+
+/* slide slider 3*/
+
+main section#zona-slider3 {width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative; }
+main section#zona-slider3 article.slick-slider{ width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative;}
+main section#zona-slider3 article.slick-slider figure#slide_01 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/604661/pexels-photo-604661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;  }
+main section#zona-slider3 article.slick-slider figure#slide_01 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider3 article.slick-slider figure#slide_01 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider3 article.slick-slider figure#slide-02 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/3470478/pexels-photo-3470478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;   }
+main section#zona-slider3 article.slick-slider figure#slide-02 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider3 article.slick-slider figure#slide-02 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 250, 250); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider3 article.slick-slider figure#slide-03 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('https://images.pexels.com/photos/1060803/pexels-photo-1060803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover;   }
+main section#zona-slider3 article.slick-slider figure#slide-03 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(255, 255, 255); transition: all 0.3s ease-in; }
+main section#zona-slider3 article.slick-slider figure#slide-03 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: rgb(7, 211, 0); text-shadow: 0 0 5px rgb(238, 238, 238); transition: all 0.3s ease-in; text-decoration: none;}
+
+.slick-prev { left: 25px !important ; z-index: 9 !important ;}
+.slick-next { right:25px  !important ;z-index: 9 !important ;}
+
+
+/* Sección 01 */
+main section#seccion-01 { width: 100%; height: 500px; margin: 0 auto; float: none; position: relative; }
+main section#seccion-01 figure#img-01 { width: 50%; height: 500px; margin: 0; float: left; position: relative; background: url('https://images.pexels.com/photos/737586/pexels-photo-737586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat bottom center; background-size: cover; }
+main section#seccion-01 figure#img-02 { width: 25%; height: 500px; margin: 0; float: left; position: relative; background: url('https://images.pexels.com/photos/2109760/pexels-photo-2109760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#img-03 { width: 25%; height: 500px; margin: 0; float: left; position: relative; background: url('https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover; }
+
+
+
+/* Sección 02 */
+main section#seccion-02 { width: 100%; height: 550px; margin: 0 auto; float: none; position: relative; }
+main section#seccion-02 article { width: 48%; height: 400px; margin: 0; float: left; position: relative; padding: 75px 7% 75px 5%; }
+
+main section#seccion-02 article h1 { font-weight: bold; color: #00a13e; font-size: 2.813em; line-height: 1em; letter-spacing: -0.02em; padding: 0 0 30px; }
+main section#seccion-02 article h1 span { color: #2c3a32; /* text-decoration: underline; */ text-transform: uppercase; }
+
+main section#seccion-02 article p { font-weight: 400; color: #000; font-size: 1em; line-height: 1.5em; padding: 0 0 30px; text-align: justify; }
+main section#seccion-02 article p strong { font-weight: bold; }
+main section#seccion-02 article p em { font-style: italic; font-weight: bold; }
+main section#seccion-02 article p span { font-weight: bold; color: rgb(36, 170, 18); }
+main section#seccion-02 article p span.punto-final { color: #0c9600; font-weight: bold; font-weight: 2em; }
+
+main section#seccion-02 article p:nth-child(2)::first-letter { font-size: 1.563em; font-weight: bold; }
+main section#seccion-02 article p:nth-child(3) { padding: 0; }
+
+main section#seccion-02 figure#foto-seccion-02 { width: 40%; height: 550px; margin: 0; float: left; position: relative; background: url('https://images.pexels.com/photos/161850/venice-grand-canal-water-boats-161850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat top center; background-size: cover; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {width: 100%;height: auto;display: block;top: 0; left: 30px;}
+ain section#fila-fancy { width: 100%; height: auto;}
+main section#fila-fancy article {
+width: 80%;   height: 700px; margin: 0 auto;}
+main section#fila-fancy article figure {    width: 100%; height: 300px;    margin: 13px 50px; padding: 15px 0;display: block;    position: relative;}
+main section#fila-fancy article figure a {    width: 300px;height: 300px;    display: block; position: relative; float: left; margin: 0 50px; }
+main section#fila-fancy article figure a img { width: 100%;}
+
+
+main section#fila-fancy article figure a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 2.5em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: #fff; transition: all 0.3s ease-in; }
+main section#fila-fancy article figure a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgba(153, 153, 153, 0.068)  ; transition: all 0.3s ease-in; }
+
+main section#fila-fancy article figure a:hover span.nombre-categoria { letter-spacing: 0.095em; color: rgba(9, 255, 0, 0.671); transition: all 0.3s ease-in; }
+main section#fila-fancy article figure a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+/* baner */ 
+
+
+
+
+main section.bloque-productos1 { width: 100%; height: 700px; margin: 50px ; float: none; position: relative; }
+main section.bloque-productos1 article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos1 article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; }
+main section.bloque-productos1 article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos1 article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a span.nombre-producto1 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a span.precio-producto1 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-productos1 article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a:hover span.nombre-producto1 { color: #000; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a:hover span.precio-producto1 { color: #333; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+
+section.video{ width: 100%; height: 400px; margin: 50px ; float: none; position: relative;}
+section.video{ width: 500px; height: 300 auto; margin: 0 auto; float: none; position: relative; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Componente Footer con 4 columnas */
+footer { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; background: rgb(50, 87, 53); background: -moz-linear-gradient(top,  rgb(42, 99, 72) 0%, rgba(0,44,80,1) 100%); background: -webkit-linear-gradient(top,   rgb(25, 107, 50) 0%,rgb(0, 80, 20) 100%); background: linear-gradient(to bottom,  rgb(10, 93, 28) 0%,rgb(0, 80, 31) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350a5d', endColorstr='#002c50',GradientType=0 ); }
+
+footer div#ancla-footer { width: 100%; height: 1px; margin: 0; float: none; position: absolute; top: -120px; left: 0; }
+
+footer article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; padding: 90px 0; }
+
+footer article div#superior-footer { width: 100%; height: 200px; margin: 0 auto 30px; float: none; position: relative; }
+footer article div#superior-footer div.cajas-footer { width: 230px; height: 200px; margin: 0 60px 0 0; float: left; position: relative; }
+footer article div#superior-footer div.cajas-footer:last-child { margin: 0; }
+
+footer article div#superior-footer div.cajas-footer img { width: auto; height: 50px; margin: 0 0 15px; display: block; float: none; position: relative; }
+footer article div#superior-footer div.cajas-footer p { width: auto; height: auto; margin: 0; float: none; position: relative; color: #fff; font-weight: 300; font-size: 0.9em; line-height: 1.35em; text-align: left; padding: 0 30px 0 0; letter-spacing: 0.03em; }
+footer article div#superior-footer div.cajas-footer h6 { width: auto; height: auto; margin: 0; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.4em; line-height: 1.35em; text-align: left; padding: 0 0 15px 0; letter-spacing: 0.03em; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto { width: 200px; height: auto; display: block; margin: 0; float: none; position: relative; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a { width: 100%; height: 22px; display: block; margin: 0 auto 5px; float: none; position: relative; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:first-child { height: 40px; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a i { width: 10%; height: auto; display: block; margin: 0 2% 0 0; float: left; position: relative; padding: 3px 0 0 0; color: #8bc8f1; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a span { width: 88%; height: auto; display: block; margin: 0; float: left; position: relative; padding: 0; color: #fff; font-weight: 300; font-size: 0.93em; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover { transition: all 0.3s ease-in;  }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover i { color: rgb(0, 243, 53); transition: all 0.3s ease-in;  }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover span { color: rgb(0, 255, 115); transition: all 0.3s ease-in;  }
+
+
+
+/* componente botones redes sociales */
+footer article div#superior-footer div.cajas-footer nav#links-redes { width: 200px; height: 41px; margin: 0; float: none; position: relative; }
+footer article div#superior-footer div.cajas-footer nav#links-redes a { width: 41px; height: auto; margin: 0; float: left; position: relative; display: block; text-align: center; padding: 10px 0; transition: all 0.3s ease-in; }
+/* footer article div#superior-footer div.cajas-footer nav#links-redes a:hover {} */
+footer article div#superior-footer div.cajas-footer nav#links-redes a i { font-size: 1.2em; line-height: 1em; color: #fff; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-redes a:hover i { color: #00f10c; transition: all 0.3s ease-in; }
+
+
+
+/* Inferior Footer */
+footer article div#inferior-footer { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+footer article div#inferior-footer p { width: auto; height: auto; margin: 0; float: none; position: relative; color: #fff; font-weight: 300; font-size: 0.9em; line-height: 1.35em; text-align: center; padding: 0; letter-spacing: 0.1em; }
+footer article div#inferior-footer p strong { font-weight: 600; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+       
+        
+        
+        
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 100%; }
+    header article figure { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+
+    footer { width: 115%; height: 200px;margin: 0 auto; position: relative;background: url(../img/footer\ 3.jpg) no-repeat center top fixed rgba(128, 128, 128, 0.685);
+        background-size: cover;    display: block;}
+       
+        aside#boton-wp { width: 45px; height: 45px; margin: float: none; position: fixed; right: 20px; bottom: 20px; z-index: 99998; }
+
+
+
+
+
+@media only screen and (max-width: 799px)
+{ 
+    
+}
+
+@media only screen and (max-width: 899px)
+{ main section#bloque-categorias nav a { width: 96%; margin: 2% auto; display: block; 
+    
+}
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+    main section.bloque-productos article { width: 90%; }
+        
+}
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
